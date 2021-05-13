@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/set_profile_pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            tools:srcCompat="@drawable/pig" />
+
+        <Button
+            android:id="@+id/change_profpic"
+            android:layout_width="235dp"
+            android:layout_height="59dp"
+            android:layout_below="@id/set_profile_pic"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border"
+            android:onClick="onClick"
+            android:text="Change Profile Photo"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/set_username_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/change_profpic"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/username"
+            android:textColor="@color/quantum_black_text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/set_username_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/set_username_view"
+            android:ems="10"
+            android:hint="@string/username"
+            android:textColor="@android:color/darker_gray"
+            android:textColorHint="@color/quantum_bluegrey100"
+            android:digits="abcdefghijklmnopqrstuvwxyz1234567890"
+            android:inputType="textFilter"/>
+
+        <TextView
+            android:id="@+id/check_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/set_username_input"
+            android:textColor="@color/quantum_googred" />
+
+        <Button
+            android:id="@+id/confirm_username"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@id/set_username_view"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/set_username_input"
+            android:background="@color/colorPrimary"
+            android:text="Confirm"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/set_name_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/check_username"
+            android:fontFamily="sans-serif-medium"
+            android:text=" Name"
+            android:textColor="@color/quantum_black_text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/set_name_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/set_name_view"
+            android:layout_marginTop="-1dp"
+            android:ems="10"
+            android:hint=" Name"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/darker_gray"
+            android:textColorHint="@color/quantum_bluegrey100" />
+
+        <TextView
+            android:id="@+id/set_password_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/set_name_input"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/password"
+            android:textColor="@color/quantum_black_text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/set_pswd_input"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/set_password_view"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:onClick="onClick"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/set_gender_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/set_pswd_input"
+            android:fontFamily="sans-serif-medium"
+            android:text=" Gender"
+            android:textColor="@color/quantum_black_text"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/set_gender_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/set_gender_view"
+            android:entries="@array/gender_array" />
+
+        <TextView
+            android:id="@+id/set_birthday_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/set_gender_spinner"
+            android:fontFamily="sans-serif-medium"
+            android:text=" Birthday"
+            android:textColor="@color/quantum_black_text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/saved_dob_view"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/set_birthday_view"
+            android:clickable="true"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="Birthday"
+            android:longClickable="false"
+            android:onClick="onClick" />
+
+        <!--    <DatePicker-->
+        <!--        android:id="@+id/datePicker1"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_below="@+id/set_birthday_view"-->
+        <!--        android:calendarViewShown="false"-->
+        <!--        android:datePickerMode="spinner"-->
+        <!--        android:yearListSelectorColor="@color/colorAccent" />-->
+
+        <TextView
+            android:id="@+id/set_backColor_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/saved_dob_view"
+            android:fontFamily="sans-serif-medium"
+            android:text=" Background Colour"
+            android:textColor="@color/quantum_black_text"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/set_backColor_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/set_backColor_view"
+            android:entries="@array/backgroundColour_array" />
+
+        <Button
+            android:id="@+id/save_prof_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/set_backColor_spinner"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:onClick="onClick"
+            android:text="@string/fui_button_text_save"
+            android:clickable="true"
+            android:textColor="@color/colorPrimaryDark" />
+    </RelativeLayout>
+
+</ScrollView>

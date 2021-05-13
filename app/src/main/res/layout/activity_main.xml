@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/username"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/pacifico"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="70sp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/password"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/border"
+        android:cursorVisible="false"
+        android:ems="15"
+        android:fontFamily="@font/actor"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/login"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:cursorVisible="false"
+        android:ems="15"
+        android:fontFamily="@font/actor"
+        android:hint="@string/password"
+        android:inputType="textVisiblePassword"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/actor"
+        android:paddingLeft="125dp"
+        android:paddingRight="125dp"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/forgotPassword"
+        android:textColor="?attr/colorPrimaryDark" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/forgotPassword"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <fragment
+        android:name="com.example.hunter.LoginFragment"
+        android:id="@+id/fragment"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"/>
+
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/signup"
+        android:textColor="@color/colorPrimaryDark" />
+
+</RelativeLayout>

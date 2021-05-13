@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="105dp">
+
+    <ImageView
+        android:id="@+id/boardImage"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/number"
+        android:src="@drawable/pig" />
+
+    <RatingBar
+        android:id="@+id/boardRating"
+        style="@style/MyRatingBarSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/boardCategory"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@+id/boardImage"
+        android:numStars="6"
+        android:progressTint="@color/colorPrimary"
+        android:scaleX="0.7"
+        android:scaleY="0.7" />
+
+    <TextView
+        android:id="@+id/boardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/boardImage"
+        android:text="Name"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/boardCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/boardName"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/boardImage"
+        android:text="category"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="34dp"
+        android:text="1."
+        android:textSize="18dp" />
+
+</RelativeLayout>

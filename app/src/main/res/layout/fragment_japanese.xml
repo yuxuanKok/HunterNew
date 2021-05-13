@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.search.JapaneseFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SearchView
+            android:id="@+id/japaneseSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Search for Japanese eatery"
+            android:iconifiedByDefault="false">
+
+        </SearchView>
+
+        <Spinner
+            android:id="@+id/japaneseSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/japaneseSearchView"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/japaneseRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/japaneseSpinner"
+            android:layout_marginTop="6dp" />
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

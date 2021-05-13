@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/backOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-25dp"
+        android:background="@drawable/ic_close_black_24dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:scaleX="0.35"
+        android:scaleY="0.6" />
+
+    <Button
+        android:id="@+id/doneOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-25dp"
+        android:background="@drawable/ic_check_white_18dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:scaleX="0.35"
+        android:scaleY="0.6" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/backOptions">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutOpt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backOptions"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/optionsPic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/optionsUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/optionsPic"
+                    android:gravity="center_vertical"
+                    android:text="@string/username"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/placeEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpagerOpt"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+    </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/expEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutOpt"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:foregroundTint="@color/colorPrimary"
+                android:hint="@string/exp"
+                android:inputType="none|textMultiLine|text"
+                android:textCursorDrawable="@color/colorPrimary"
+                android:textSize="15sp"
+                app:backgroundTint="@color/colorPrimary" />
+
+    <com.example.hunter.MultiSelectionSpinner
+        android:id="@+id/spinnerEdit"
+        style="@style/spinner_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expEdit"
+        android:layout_marginBottom="10dp"
+        android:elevation="3dp"
+        android:theme="@style/AppTheme" />
+
+    <TextView
+        android:id="@+id/textViewEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/rate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <RatingBar
+        android:id="@+id/priceBarEdit"
+        style="@style/customRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-15dp"
+        android:numStars="4"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:stepSize="1" />
+
+    <RatingBar
+        android:id="@+id/ratingBarEdit"
+        style="@style/MyRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priceBarEdit"
+        android:layout_centerHorizontal="true"
+        android:numStars="6"
+        android:scaleX="0.65"
+        android:scaleY="0.65"
+        android:theme="@style/MyRatingBar" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">Hunter</string>
+    <string name="username">\tUsername</string>
+    <string name="password">\tPassword</string>
+    <string name="forgotPassword">Forgot password?</string>
+    <string name="or">OR</string>
+    <string name="login">Login</string>
+    <string name="signup">Don\'t have an account? Sign up now!</string>
+    <string name="fullname">\tFull Name</string>
+    <string name="email">\tE-mail</string>
+    <string name="signUp">Sign Up</string>
+    <string name="post">Posts</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="signout">Sign Out</string>
+    <string name="feed">News Feed</string>
+    <string name="search">Search</string>
+    <string name="addPost">Add Post</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+    <string name="where">Where are you?</string>
+    <string name="exp">How was your experience?</string>
+    <string name="rate">Rate your experience!</string>
+    <string name="image_download_url">https://picsum.photos/200/300/?random</string>
+    <string name="next">Next</string>
+    <string name="rewards">Rewards</string>
+    <string name="places">Places</string>
+    <string name="comments">Comments</string>
+    <string name="follow">FOLLOW\t\t\t</string>
+    <string name="followingButton">FOLLOWING\t\t\t</string>
+    <string name="addComment">Add a comment…</string>
+    <string name="likes">Likes</string>
+    <string name="deletePost">Delete</string>
+    <string name="editPost">Edit</string>
+
+    <string-array name="category">
+        <item>Asian</item>
+        <item>Bar</item>
+        <item>Chinese</item>
+        <item>Dessert</item>
+        <item>Fast Food</item>
+        <item>Fusion</item>
+        <item>German</item>
+        <item>Halal</item>
+        <item>Indian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Malaysian</item>
+        <item>Mexican</item>
+        <item>Middle Eastern</item>
+        <item>Pastry</item>
+        <item>Snack</item>
+        <item>Thai</item>
+        <item>Vietnamese</item>
+        <item>Western</item>
+    </string-array>
+
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">392540071456526</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb392540071456526</string>
+    <string name="title_activity_account">AccountActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
+    <string name="title_activity_feed">FeedActivity</string>
+    <string name="title_activity_add_post">AddPostActivity</string>
+
+    <string-array name="gender_array">
+        <item>Please Select</item>
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+    <string-array name="backgroundColour_array">
+        <item>Default (Red)</item>
+        <item>Yellow</item>
+        <item>Dark</item>
+    </string-array>
+
+    <string-array name="searchSpinner">
+        <item>Without filter</item>
+        <item>Lower Price To Higher Price</item>
+        <item>Higher Price To Lower Price</item>
+        <item>Higher Rating To Lower Rating</item>
+    </string-array>
+
+    <string-array name="rewardsSpinner">
+        <item>Without filter</item>
+        <item>Lower Points To Higher Points</item>
+        <item>Higher Points To Lower Points</item>
+    </string-array>
+
+
+    <string name="eatery">Eatery</string>
+    <string name="eateryName">Eatery Name</string>
+    <string name="openingHours">Opening Hours: </string>
+    <string name="eateryAddress">Address: </string>
+    <string name="about"><u>About</u></string>
+    <string name="category">Category</string>
+    <string name="phoneNumber">Phone: </string>
+    <string name="priceLevel">Price Level:</string>
+    <string name="reviews">Reviews</string>
+    <string name="writeReview">Write a Review</string>
+
+    <!--    <string name="default_web_client_id">834922800249-l8kcst2nqbphrl5pehft3ntuvc6ppu18.apps.googleusercontent.com</string>-->
+
+</resources>

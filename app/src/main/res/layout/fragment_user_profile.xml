@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefefe">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll">
+
+            <RelativeLayout
+                android:id="@+id/layoutTwo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".FeedActivity">
+
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="#00FFFFFF"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="?attr/actionBarTheme"
+                    app:titleTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:titleTextColor="@color/place_autocomplete_prediction_secondary_text" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profilePicUser"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_below="@id/toolbar5"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    tools:srcCompat="@drawable/pig" />
+
+                <Button
+                    android:id="@+id/optionsUser"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/ic_more_vert_black_24dp"
+                    android:backgroundTint="@color/place_autocomplete_prediction_secondary_text"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:shadowColor="#00FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_below="@id/toolbar5"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toEndOf="@id/profilePicUser"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/usernameProfileUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Username"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/postNumCountUser"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="5dp"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/followerNumCountUser"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="4dp"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/followingNumCountUser"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="50dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="4dp"
+                                android:text="0"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/postNumUser"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="15dp"
+                                android:text="@string/post"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/followerNumUser"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="15dp"
+                                android:text="@string/followers"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/followingNumUser"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="15dp"
+                                android:text="@string/following"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+
+                <CheckBox
+                    android:id="@+id/followButton"
+                    style="@style/MyCheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profilePicUser"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:buttonTint="#00000000"
+                    android:elevation="1dp"
+                    android:fontFamily="@font/actor"
+                    android:padding="3dp"
+                    android:text="@string/follow"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userPostsUser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/followButton"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+

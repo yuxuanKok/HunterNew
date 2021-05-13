@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.search.WesternFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SearchView
+            android:id="@+id/westernSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Search for Western eatery"
+            android:iconifiedByDefault="false">
+
+        </SearchView>
+
+        <Spinner
+            android:id="@+id/westernSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/westernSearchView"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/westernRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/westernSpinner"
+            android:layout_marginTop="6dp" />
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

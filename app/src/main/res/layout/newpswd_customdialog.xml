@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/newpswd_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Password" />
+
+    <EditText
+        android:id="@+id/newpswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newpswd_view"
+        android:ems="10"
+        android:hint="New Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/confirm_newpswd_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newpswd"
+        android:text="Confirm New Password" />
+
+    <EditText
+        android:id="@+id/confirm_newpswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirm_newpswd_view"
+        android:ems="10"
+        android:hint="Retype new Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/confirm_newpswd"/>
+
+
+</LinearLayout>
